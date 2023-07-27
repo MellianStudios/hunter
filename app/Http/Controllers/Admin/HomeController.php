@@ -11,7 +11,7 @@ class HomeController extends Controller
 {
     public function __invoke(): Response
     {
-        return Inertia::render('Admin/Customer/Home', [
+        return Inertia::render('Admin/Home', [
             'canLogin' => Route::has('login'),
             'canRegister' => Route::has('register'),
         ]);
